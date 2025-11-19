@@ -5,9 +5,9 @@ const cors = require("cors");
 const mongoose = require("mongoose");
 const { User, Contact, Conversation, Message, Call } = require("./models");
 const authRoutes = require("./routes/auth");
-const usersRoutes = require("./routes/users");
-const contactsRoutes = require("./routes/contacts");
-const convRoutes = require("./routes/conversations");
+const usersRoutes = require("./routes/users.routes");
+const contactsRoutes = require("./routes/contacts.routes");
+const convRoutes = require("./routes/conversations.routes");
 
 const app = express();
 const server = http.createServer(app);
